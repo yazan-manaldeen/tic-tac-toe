@@ -1,0 +1,51 @@
+/* You can add global styles to this file, and also import other style files */
+
+.light {
+  --fav-icon-color: #F0F3F5;
+  --app-color-default: var(--app-color-50);
+  --app-color-50: 240 243 245;
+  --app-color-100: 228 234 237;
+  --app-color-200: 188 199 207;
+  --app-color-300: 152 166 179;
+  --app-color-400: 91 105 122;
+  --app-color-500: 41 50 65;
+  --app-color-600: 33 42 59;
+  --app-color-700: 23 31 48;
+  --app-color-800: 15 22 38;
+  --app-color-900: 8 13 28;
+  --app-color-950: 3 7 18;
+}
+
+.dark {
+  --fav-icon-color: #030712;
+  --app-color-default: var(--app-color-50);
+  --app-color-50: 3 7 18;
+  --app-color-100: 8 13 28;
+  --app-color-200: 15 22 38;
+  --app-color-300: 23 31 48;
+  --app-color-400: 33 42 59;
+  --app-color-500: 41 50 65;
+  --app-color-600: 91 105 122;
+  --app-color-700: 152 166 179;
+  --app-color-800: 188 199 207;
+  --app-color-900: 228 234 237;
+  --app-color-950: 240 243 245;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 0;
+}

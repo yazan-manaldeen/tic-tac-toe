@@ -1,0 +1,6 @@
+::ng-deep .mat-mdc-text-field-wrapper,
+::ng-deep .mat-mdc-text-field-wrapper *,
+::ng-deep .mat-mdc-select-panel,
+::ng-deep .mat-mdc-option {
+  @apply bg-blue text-blue-900 #{'!important'};
+}

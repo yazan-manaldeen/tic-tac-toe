@@ -1,0 +1,16 @@
+{
+  "auto": "Auto",
+  "light": "Light",
+  "dark": "Dark",
+  "theme": "Theme",
+  "soloPlay": "Solo Play",
+  "friendPlay": "Play with a friend",
+  "you": "You",
+  "bot": "Bot",
+  "friend": "Friend",
+  "level": "Bot Level",
+  "easy": "Easy",
+  "medium": "Medium",
+  "hard": "Hard",
+  "reset": "Reset"
+}

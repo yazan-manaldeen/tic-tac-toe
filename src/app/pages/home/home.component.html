@@ -1,0 +1,38 @@
+<div class="flex justify-between">
+  <button @zoomIn @zoomOut [matMenuTriggerFor]="themeMenu" [matTooltip]="'theme' | translate" class="!bg-blue-400/50"
+          mat-icon-button>
+    <mat-icon [svgIcon]="'theme'"/>
+  </button>
+  <mat-menu #themeMenu="matMenu" [overlapTrigger]="false" class="!bg-blue-400/50 !text-blue-900">
+    <button (click)="changeTheme('auto')" [class.active]="selectedTheme === 'auto'"
+            [matTooltip]="'auto' | translate" mat-icon-button>
+      <mat-icon [svgIcon]="'auto'"/>
+    </button>
+    <button (click)="changeTheme('light')" [class.active]="selectedTheme === 'light'"
+            [matTooltip]="'light' | translate" mat-icon-button>
+      <mat-icon [svgIcon]="'sun'"/>
+    </button>
+    <button (click)="changeTheme('dark')" [class.active]="selectedTheme === 'dark'"
+            [matTooltip]="'dark' | translate" mat-icon-button>
+      <mat-icon [svgIcon]="'moon'"/>
+    </button>
+  </mat-menu>
+
+  <button (click)="changeLang()" @zoomIn @zoomOut [matTooltip]="selectedLang === 'en' ? 'Deutsch' : 'English'"
+          class="!bg-blue-400/50" mat-icon-button>
+    <mat-icon [svgIcon]="selectedLang === 'en' ? 'de' : 'en'"/>
+  </button>
+</div>
+<div class="flex justify-between">
+  <mat-icon @zoomIn @zoomOut [svgIcon]="'logo'" class="my-16 mx-auto !size-40"/>
+</div>
+<div class="flex justify-between flex-col mt-16">
+  <a @zoomIn @zoomOut [queryParams]="{game: 'solo-player'}" [routerLink]="'/game'"
+     class="w-60 my-3 mx-auto p-3 bg-blue-900 rounded-lg text-lg text-center text-blue border-solid border-b-4 border-blue-400/50">
+    {{ 'soloPlay' | translate }}
+  </a>
+  <a @zoomIn @zoomOut [queryParams]="{game: 'two-players'}" [routerLink]="'/game'"
+     class="w-60 my-3 mx-auto p-3 bg-blue-900 rounded-lg text-lg text-center text-blue border-solid border-b-4 border-blue-400/50">
+    {{ 'friendPlay' | translate }}
+  </a>
+</div>

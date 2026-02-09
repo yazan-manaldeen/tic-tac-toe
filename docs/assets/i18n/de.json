@@ -1,0 +1,16 @@
+{
+  "auto": "Auto",
+  "light": "Hell",
+  "dark": "Dunkel",
+  "theme": "Thema",
+  "soloPlay": "Einzelspieler",
+  "friendPlay": "Mit einem Freund spielen",
+  "you": "Du",
+  "bot": "Bot",
+  "level": "Bot Level",
+  "easy": "Leicht",
+  "medium": "Mittel",
+  "hard": "Schwer",
+  "friend": "Freund",
+  "reset": "Zurücksetzen"
+}
